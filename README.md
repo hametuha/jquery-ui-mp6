@@ -1,8 +1,10 @@
 # jQuery UI MP6
 
-jQuery UI Theme for WordPress admin panel.
+Simple and clean jQuery UI Theme for WordPress admin panel.
 
 Based on Smoothness of [jQuery ThemeRoller](http://jqueryui.com/themeroller/#!).
+
+Color scheme follows WordPress new UI [MP6](http://wordpress.org/news/2013/12/parker/).
 
 ## How to use
 
