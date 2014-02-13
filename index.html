@@ -83,7 +83,7 @@
   <script type="text/javascript">
       $('body').on('click', 'a[href]', function(e){
           var url = $(this).attr('href');
-          if( /^https?:\/\//.text(url) ){
+          if( /^https?:\/\//.test(url) ){
               try{
                   ga('send', {
                       hitType: 'event',
