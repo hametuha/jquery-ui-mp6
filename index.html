@@ -2,7 +2,7 @@
 <html lang="us">
 <head>
 	<meta charset="utf-8">
-	<title>jQuery UI Example Page</title>
+	<title>jQuery UI MP6 Example Page</title>
     <link href="src/css/jquery-ui.css" rel="stylesheet">
 	<script src="src/js/jquery-1.9.1.js"></script>
 	<script src="src/js/jquery-ui-1.10.3.custom.js"></script>
@@ -171,18 +171,21 @@
 	.fakewindowcontain .ui-widget-overlay {
 		position: absolute;
 	}
+    p.copy{
+        text-align: center;
+    }
 	</style>
 </head>
 <body>
 
-<h1>Welcome to jQuery UI!</h1>
+<h1>jQuery UI MP6 Example Page</h1>
 
 <div class="ui-widget">
-	<p>This page demonstrates the widgets you downloaded using the theme you selected in the download builder. We've included and linked to minified versions of <a href="js/jquery-1.9.1.js">jQuery</a>, your personalized copy of <a href="js/jquery-ui-.custom.min.js">jQuery UI (js/jquery-ui-.custom.min.js)</a>, and <a href="css//jquery-ui-.custom.min.css">css//jquery-ui-.custom.min.css</a> which imports the entire jQuery UI CSS Framework. You can choose to link a subset of the CSS Framework depending on your needs. </p>
-	<p>You've downloaded components and a theme that are compatible with jQuery 1.6+. Please make sure you are using jQuery 1.6+ in your production environment.</p>
+	<p></p>
+	<p>Please make sure you are using <strong>jQuery 1.6+</strong> in your production environment.</p>
 </div>
 
-<h1>YOUR COMPONENTS:</h1>
+<h1>Available Components:</h1>
 
 
 <!-- Accordion -->
@@ -469,6 +472,72 @@
 		<strong>Alert:</strong> Sample ui-state-error style.</p>
 	</div>
 </div>
+<p class="copy">
+    &copy; 2014 <a class="home" href="http://hametuha.github.io/jquery-ui-mp6/">Hametuha inc.</a>
+</p>
+<script type="text/javascript">
+//<![CDATA[
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-5329295-4', 'hametuha.github.io');
+    ga('send', 'pageview');
 
+    $('body').on('click', 'a', function(e){
+        var url, action, category, label;
+        if( $(this).hasClass('home') ){
+            url = $(this).attr('href');
+            category = 'outbound';
+            action = url.split('/')[2];
+            label = url;
+        }else{
+            url = false;
+            category = 'click';
+            if($(this).attr('id')){
+                action = '#' + $(this).attr('id');
+            }else{
+                $(this).parents('div').each(function(index, elt){
+                    if( $(elt).attr('id') ){
+                        action = '#' + $(elt).attr('id');
+                    }
+                });
+            }
+            if( !action ){
+                action = 'undefined';
+            }
+            label = action;
+        }
+        try{
+            ga('send', {
+                hitType: 'event',
+                eventCategory: category,
+                eventAction: action,
+                eventLabel: label,
+                eventValue: 1,
+                hitCallback: function(){
+                    if( url ){
+                        window.location.href = url;
+                    }
+                }
+            });
+            if(url){
+                e.preventDefault();
+            }
+        }catch (e){}
+    }).on('mouseenter', 'div[id], input[id], button[id]', function(e){
+        try{
+            var id = '#' + $(this).attr('id');
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'hover',
+                eventAction: id,
+                eventLabel: id,
+                eventValue: 1
+            });
+        }catch (e){}
+    });
+//]]>
+</script>
 </body>
 </html>

@@ -6,6 +6,8 @@ Based on Smoothness of [jQuery ThemeRoller](http://jqueryui.com/themeroller/#!).
 
 Color scheme follows WordPress new UI [MP6](http://wordpress.org/news/2013/12/parker/).
 
+[Examples](http://hametuha.github.io/jquery-ui-mp6/demo/) are available.
+
 ## How to use
 
 Use `css` and `images` in `src` folder.
