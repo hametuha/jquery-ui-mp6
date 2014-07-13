@@ -20,6 +20,23 @@ add_action('init', function(){
 });  
 ```
 
+## How to override
+
+Color schemes and icon images are defined at `scss/_variables.scss`.
+So, if you want to override them, make `your-ui.scss` like below.
+
+```scss
+// For example, jqueyr-ui-mp6 is at /vendor/jquery-ui-mp6/src
+// Your ui.scss will be compiled to /assets/css/your-ui.css
+//
+// Change Image path to avoid 404
+$image-dir: '../../vendor/jquery-ui-mp6/src/images';
+// Change notification color
+$notification-color: salmon;
+// Change widget border color
+$container-border: #888;
+```
+
 ## Lisence
 
 This source code is released under [MIT lisence](http://opensource.org/licenses/mit-license.php).
