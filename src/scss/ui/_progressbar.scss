@@ -1,0 +1,37 @@
+
+.ui-progressbar {
+  height: 2em;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  .progress-label {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 4px;
+    font-weight: bold;
+    z-index: 101;
+  }
+  .ui-progressbar-value {
+    margin: -1px;
+    height: 100%;
+  }
+  .ui-progressbar-overlay {
+    background: url($progress-bar-image);
+    z-index: 100;
+    height: 100%;
+    @include opacity(0.25);
+  }
+  &.complete{
+    .ui-progressbar-value{
+      background: $highlight-color;
+    }
+    .progress-label{
+      color: $highlight-text-color;
+    }
+  }
+}
+
+.ui-progressbar-indeterminate .ui-progressbar-value {
+  background-image: none;
+}

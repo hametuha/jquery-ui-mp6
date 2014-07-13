@@ -1,0 +1,99 @@
+@import 'compass';
+
+$tint-grey: #fcfcfc !default;
+$grey-border: #f9f9f9 !default;
+
+$text-color: #fff !default;
+$base-color: #222 !default;
+$icon-color: hsl( hue( $base-color ), 7%, 95% ) !default;
+
+$highlight-color: #0074a2 !default;
+$notification-color: #d54e21 !default;
+$success: #85c663 !default;
+
+
+$highlight-text-color: #fff !default;
+
+$button-bg-color: #f7f7f7 !default;
+
+
+//
+// Corner radius
+//
+// ----------------------------
+//
+$corner-all-radius: 2px !default;
+$corner-tl-radius: $corner-all-radius !default;
+$corner-tr-radius: $corner-all-radius !default;
+$corner-bl-radius: $corner-all-radius !default;
+$corner-br-radius: $corner-all-radius !default;
+
+
+//
+// Interaction style
+//
+// ----------------------------
+//
+$container-border: #dddddd !default;
+$container-text: #444444 !default;
+$icon-grey: #666666 !default;
+$container-header: #f1f1f1 !default;
+$container-body: #ffffff !default;
+
+$state-hover-text: #fff !default;
+
+$state-active-bg: #fff !default;
+$state-active-text: $notification-color !default;
+
+$state-highlight-border: #ccc !default;
+$state-highlight-bg: #fff !default;
+
+$state-error-border: $notification-color !default;
+$state-error-bg: #fff !default;
+$state-error-text: $base-color !default;
+
+//
+// Overlay style
+//
+// ----------------------------
+//
+$overlay-bg: #000 !default;
+
+// Float element's overlay color
+$float-elements-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2) !default;
+
+// Float element's shadow
+$float-elements: 0 0 5px 0 rgba(0, 0, 0, 0.8) !default;
+
+// Add box shadow to floating elements
+%ui-float{
+  @include box-shadow($float-elements-shadow);
+}
+
+
+//
+// images
+//
+// ----------------------------
+//
+$image-dir: '../images' !default;
+
+$icon-image-content: '#{$image-dir}/ui-icons_222222_256x240.png' !default;
+$icon-image-header: $icon-image-content !default;
+$icon-image-default: '#{$image-dir}/ui-icons_666666_256x240.png' !default;
+$icon-image-hover: '#{$image-dir}ui-icons_ffffff_256x240.png' !default;
+$icon-image-highlight: '#{$image-dir}/ui-icons_0074a2_256x240.png' !default;
+$icon-image-active: '#{$image-dir}/ui-icons_d54e21_256x240.png' !default;
+$icon-image-error: '#{$image-dir}/ui-icons_d54e21_256x240.png' !default;
+
+$progress-bar-image: "#{$image-dir}/animated-overlay.gif" !default;
+
+// Override header's border
+%simple-header{
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  background: $container-body;
+  @include border-radius(0);
+}
+
