@@ -1,0 +1,18 @@
+{
+  "name": "jquery-ui-mp6",
+  "version": "1.0.0",
+  "description": "Simple and clean jQuery UI Theme for WordPress admin panel.",
+  "main": "src",
+  "license": "MIT",
+  "homepage": "http://hametuha.github.io/jquery-ui-mp6/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hametuha/jquery-ui-mp6.git"
+  }
+  "dependencies": {
+    "jquery-ui": "1.11"
+  },
+  "authors": [
+    { "name": "Takahshi Fumimki", "email": "takahashi.fumiki@hametuha.co.jp", "homepage": "http://hametuha.co.jp" }
+  ]
+}
