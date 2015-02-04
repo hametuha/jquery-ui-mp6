@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/hametuha/jquery-ui-mp6.git"
-  }
+  },
   "dependencies": {
     "jquery-ui": "1.11"
   },
