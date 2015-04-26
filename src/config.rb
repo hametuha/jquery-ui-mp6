@@ -10,6 +10,7 @@ fonts_dir = "fonts"
 
 output_style = :compressed
 environment = :production
+sourcemap = false
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true

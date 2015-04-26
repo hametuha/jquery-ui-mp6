@@ -1,6 +1,6 @@
 {
   "name": "jquery-ui-mp6",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and clean jQuery UI Theme for WordPress admin panel.",
   "main": "src",
   "license": "MIT",
@@ -12,6 +12,10 @@
   "dependencies": {
     "jquery-ui": "1.11"
   },
+  "ignore": [
+    "src/js",
+    "node_modules"
+  ],
   "authors": [
     { "name": "Takahshi Fumimki", "email": "takahashi.fumiki@hametuha.co.jp", "homepage": "http://hametuha.co.jp" }
   ]
