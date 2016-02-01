@@ -51,7 +51,7 @@
 }
 
 .ui-front {
-  z-index: 100;
+  z-index: $front-index;
 }
 
 
@@ -135,7 +135,7 @@
 
 .ui-selectable-helper {
   position: absolute;
-  z-index: 100;
+  z-index: $front-index + 1;
   border: 1px dotted black;
 }
 .ui-draggable .ui-dialog-titlebar {

@@ -59,6 +59,8 @@ $state-error-text: $base-color !default;
 //
 $overlay-bg: #000 !default;
 
+$front-index: 1001 !default;
+
 // Float element's overlay color
 $float-elements-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2) !default;
 
@@ -81,7 +83,7 @@ $image-dir: '../images' !default;
 $icon-image-content: '#{$image-dir}/ui-icons_222222_256x240.png' !default;
 $icon-image-header: $icon-image-content !default;
 $icon-image-default: '#{$image-dir}/ui-icons_666666_256x240.png' !default;
-$icon-image-hover: '#{$image-dir}ui-icons_ffffff_256x240.png' !default;
+$icon-image-hover: '#{$image-dir}/ui-icons_ffffff_256x240.png' !default;
 $icon-image-highlight: '#{$image-dir}/ui-icons_0074a2_256x240.png' !default;
 $icon-image-active: '#{$image-dir}/ui-icons_d54e21_256x240.png' !default;
 $icon-image-error: '#{$image-dir}/ui-icons_d54e21_256x240.png' !default;
